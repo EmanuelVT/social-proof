@@ -1,0 +1,439 @@
+body {
+    overflow-y: hidden;
+    display: flex;
+    height: 100vh;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+
+}
+
+#upper-curve {
+    position: absolute;
+    right: 50%;
+    bottom: 65%;
+}
+
+
+
+.info {
+    position: absolute;
+    height: 63%;
+    
+    width: 1312px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    /*
+    right: 15%;
+    left: 15%;*/
+    bottom: 17%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper {
+    height: 50%;
+    display: flex;
+
+}
+
+.upper h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    width: 80%;
+    margin-bottom: 17px;
+    color: hsl(300, 43%, 22%)
+}
+
+.upper .ratings {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.upper p {
+    width: 70%;
+    line-height: 23px;
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+}
+
+.upper .description {
+    width: 50%;
+}
+
+.lower {
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.review {
+    background: hsl(300, 24%, 96%);
+    padding: 20px;
+    margin-bottom: 17px;
+    border-radius: 7px;
+    width: 65%;
+}
+
+.stars {
+    margin-left: 12px;
+    margin-right: 27px;
+}
+
+.review span {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%)
+}
+
+.report {
+   margin-right: 60px;
+}
+
+.reviews {
+    margin-right: 120px;
+   
+}
+
+
+.testimonial {
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    padding: 30px;
+    padding-top: 40px;
+    padding-left: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 0px;
+    width: 100%;
+    margin-right: 30px;
+   
+}
+
+.verified-buyer{
+    margin-left: 13px;
+}
+
+.testimonial .upper-testimonial{
+    margin-bottom: 20px;
+}
+
+.testimonial img{
+    border-radius: 50%;
+    width: 45px;
+}
+
+.upper-testimonial{
+    display: flex;
+}
+
+.upper-testimonial p{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+
+.lower-testimonial{
+    line-height: 24px;
+}
+
+.lower-testimonial p{
+    width: 95%;
+}
+
+.client{
+    font-weight: 700;
+}
+
+.buyer{
+    color: hsl(333, 80%, 67%);
+}
+
+.review .report{
+    margin-top: 10px;
+}
+
+.irene{
+    margin-bottom: 40px!important;
+}
+
+ .colton{
+    margin-bottom: 60px!important;
+}
+
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1390px) {
+    
+
+    .info {
+        height: 67%;
+        width: 1100px;
+        margin-top: auto;
+        top: 0;
+        margin-bottom: auto;
+        bottom: 0;
+   
+    }
+
+    .review {
+        background: hsl(300, 24%, 96%);
+        padding: 20px;
+        margin-bottom: 17px;
+        border-radius: 7px;
+        width: initial;
+    }
+
+
+    .upper p {
+        width: 100%;
+    }
+
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+@media only screen and (max-width: 1108px) {
+   
+
+    .info {
+        height: 80%;
+        width: 900px;
+        margin-top: auto;
+        top: 0;
+        margin-bottom: auto;
+        bottom: 0;
+   
+    }
+
+    .review {
+        background: hsl(300, 24%, 96%);
+        padding: 20px;
+        margin-bottom: 17px;
+        border-radius: 7px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stars{
+        margin-bottom: 10px;
+    }
+
+    .report{
+        margin-right: 120px;
+    }
+
+    .best-tech{
+        margin-right: 120px;
+    }
+    
+   
+    .upper{
+        align-items: center;
+    }
+
+    .lower{
+        align-items: flex-start;
+    }
+
+    .upper p {
+        width: 100%;
+    }
+
+    #upper-curve {
+        position: absolute;
+        right: 50%;
+        bottom: 77%;
+    }
+
+}
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 904px) {
+    body{
+        height: 220vh;
+    }
+
+    .container {
+        height: 180vh;
+    }
+
+    .info{
+        width: 650px;
+    }
+
+    .upper, .lower{
+        flex-direction: column;
+    }
+
+    .upper{
+        height: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .upper h1 {
+         width: 100%;
+    }
+
+    .upper p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .reviews, .report, .best-tech{
+        margin-right: 0px;
+    }
+
+    .upper .ratings{
+        align-items: center;
+    }
+
+    .upper .description {
+        width: 80%;
+    }
+
+    .upper .ratings{
+        width: 70%;
+    }
+
+    .review{
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .testimonial{
+        background-color: hsl(300, 43%, 22%);
+        color: hsl(0, 0%, 100%);
+        padding: 30px;
+        padding-top: 40px;
+        padding-left: 40px;
+        border-radius: 10px;
+        margin: 20px;
+        margin-left: 20px;
+        width: 65%;
+        margin-right: 30px!important;
+    }
+
+    .lower{
+        align-items:center;
+    }
+
+    .colton{
+        margin-bottom: 10px!important;
+    }
+
+    .irene{
+        margin-bottom: 10px!important;
+    }
+
+    #upper-curve {
+        position: absolute;
+        right: 50%;
+        bottom: 94%;
+    }
+
+    #botton-curve{
+        visibility: hidden;
+    }
+
+    /*
+
+    .upper p {
+        width: 80%;
+    }
+
+    .upper .description {
+        width: 70%;
+    }
+
+    .upper .ratings{
+        align-items: center;
+    }
+
+    .review{
+        width: 100%;
+    }
+
+
+*/
+ 
+}
+
+
+@media only screen and (width: 768px) and (height:1024px) {
+    body{
+        font-size: 13px;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    body{
+        font-size: 13px;
+        height: 250vh;
+    }
+
+    .container {
+       
+    }
+
+    .info{
+        width: 470px;
+    }
+
+    .upper h1 {
+        font-size:2rem;
+    }
+
+    #upper-curve {
+        position: absolute;
+        right: 50%;
+        bottom: 84%;
+    }
+
+    .upper {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 560px) and (min-height: 650px){
+    body{
+        height: 200vh;
+
+    }
+}
+
